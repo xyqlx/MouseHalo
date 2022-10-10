@@ -1,0 +1,13 @@
+﻿<local:BaseEffectWindow x:Class="MouseHalo.Effects.IMEEffectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:emoji="clr-namespace:Emoji.Wpf;assembly=Emoji.Wpf"
+        xmlns:local="clr-namespace:MouseHalo.Effects"
+        mc:Ignorable="d" SizeToContent="WidthAndHeight"
+        Title="" IsHitTestVisible="False">
+    <StackPanel Background="Transparent" Orientation="Vertical" HorizontalAlignment="Center" Height="Auto">
+        <emoji:TextBlock x:Name="NoticeLabel" Text="{Binding IsChineseText, Mode=OneWay}"></emoji:TextBlock>
+    </StackPanel>
+</local:BaseEffectWindow>
