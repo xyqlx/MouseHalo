@@ -13,7 +13,11 @@
                 <EventTrigger RoutedEvent="Loaded">
                     <BeginStoryboard>
                         <Storyboard>
-                            <!--<DoubleAnimation Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.8" />-->
+                            <!--<DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:1" />-->
+                            <!--<ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="Margin" BeginTime="00:00:00">
+                                <SplineThicknessKeyFrame KeyTime="00:00:00" Value="0,0,0,0" />
+                                <SplineThicknessKeyFrame KeyTime="00:00:01" Value="100,100,0,0" />
+                            </ThicknessAnimationUsingKeyFrames>-->
                         </Storyboard>
                     </BeginStoryboard>
                 </EventTrigger>
