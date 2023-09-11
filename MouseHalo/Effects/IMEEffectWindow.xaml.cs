@@ -28,7 +28,7 @@ namespace MouseHalo.Effects
             if (e.PropertyName == nameof(AppConfig.FontSize))
             {
                 NoticeLabel.FontSize = App.AppConfig.FontSize;
-                Offset = new Point(App.AppConfig.FontSize / 2 + 18, App.AppConfig.FontSize / 2 + 18);
+                Offset = new Point(App.AppConfig.FontSize / 2 + 24, App.AppConfig.FontSize / 2 + 24);
             }
         }
         public IMEEffectWindow(IMEStatusData IMEStatus): base()
@@ -38,7 +38,7 @@ namespace MouseHalo.Effects
             InitializeComponent();
             NoticeLabel.FontSize = App.AppConfig.FontSize;
             App.AppConfig.PropertyChanged += OnFontSizeChanged;
-            Offset = new Point(30, 30);
+            Offset = new Point(App.AppConfig.FontSize / 2 + 24, App.AppConfig.FontSize / 2 + 24);
         }
 
         public IMEStatusData IMEStatus = new();

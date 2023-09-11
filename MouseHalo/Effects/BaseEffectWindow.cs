@@ -27,7 +27,9 @@ namespace MouseHalo.Effects
             Focusable = false;
             ShowActivated = false;
         }
+
         public Point Offset { get; set; } = new Point(0, 0);
+        
         public void FollowCursor()
         {
             Left = System.Windows.Forms.Cursor.Position.X - ActualWidth / 2 + Offset.X;
