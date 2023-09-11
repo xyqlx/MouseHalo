@@ -26,7 +26,7 @@ namespace MouseHalo.Effects
             SetLabel(eventArgs);
             FollowCursor();
             CloseAfter(TimeSpan.FromSeconds(1));
-        }       
+        }
 
         public void SetLabel(ClipboardEventArgs? eventArgs)
         {
@@ -71,9 +71,8 @@ namespace MouseHalo.Effects
                 {
                     types.Add("❓︎");
                 }
-
-                NoticeTextBlock.Text = string.Join("", types);
                 NoticeTextBlock.FontSize = App.AppConfig.FontSize;
+                NoticeTextBlock.Text = string.Join("", types);
                 Offset = new Point(10, -NoticeTextBlock.FontSize - 20);
             }
         }

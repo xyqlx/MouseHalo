@@ -7,4 +7,5 @@
     <system:String x:Key="active_check_interval">输入法状态自动检测间隔（ms）</system:String>
     <system:String x:Key="check_window_change">改变活动窗口时提示输入法状态</system:String>
     <system:String x:Key="check_shift_key">按下Shift时提示输入法状态（实验功能）</system:String>
+    <system:String x:Key="font_size">显示字体大小</system:String>
 </ResourceDictionary>

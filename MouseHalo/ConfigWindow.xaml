@@ -26,6 +26,10 @@
                 <TextBlock Text="{DynamicResource check_shift_key}"/>
                 <CheckBox IsChecked="{Binding IsCheckShiftKeyPress, Mode=TwoWay}"></CheckBox>
             </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{DynamicResource font_size}"/>
+                <TextBox Text="{Binding FontSize, Mode=TwoWay}"/>
+            </StackPanel>
         </StackPanel>
         <StackPanel Grid.Row="1" Margin="20">
             <Button x:Name="RegisterButon" Content="{DynamicResource register_task}" Width="Auto" Click="RegisterButton_Click"></Button>
