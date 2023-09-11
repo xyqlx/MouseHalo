@@ -39,24 +39,6 @@ namespace MouseHalo
 
         private bool hasRegistered = false;
 
-        // on load
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            App.AppConfig.PropertyChanged += SaveConfig;
-        }
-
-        private void SaveConfig(object? sender, PropertyChangedEventArgs e)
-        {
-            Debug.Print(App.AppConfig.IsCheckShiftKeyPress.ToString());
-            AppConfig.Save(App.AppConfig);
-        }
-
-        // on close
-        private void Window_Closing(object sender, CancelEventArgs e)
-        {
-            App.AppConfig.PropertyChanged -= SaveConfig;
-        }
-
         private void RegisterButton_Click(object sender, EventArgs e)
         {
             Process proc = new Process();
